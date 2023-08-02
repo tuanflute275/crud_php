@@ -1,1 +1,7 @@
-<?php //kết nối csdl include_once 'connect.php'; $name = $_POST['user_name']; $email = $_POST['email']; $password = $_POST['password']; // câu lệnh sql $sql = "INSERT INTO `account`(`name`, `email`, `password`) VALUES ('$name', '$email', '$password')"; // kiểm tra câu lệnh sql // echo $sql; //thực hiện câu lệnh sql if (mysqli_query($conn, $sql)) { echo 'Data inserted successfully !!'; // Chuyển hướng đến trang get.php header("Location: get.php"); exit; // Đảm bảo không có mã PHP tiếp tục thực thi sau khi chuyển hướng } else { die(mysqli_error($conn)); } ?>
+CREATE TABLE account 
+(
+	id int PRIMARY KEY AUTO_INCREMENT, 
+    name varchar(200) not null,
+    email varchar(200) not null,
+    password varchar(200) not null
+);
