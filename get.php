@@ -57,7 +57,7 @@
                         <a class='mr-3 text-dark text-decoration-none' href='/crud/edit.php?id=$row[id]' role='button'>
                             <i class='fa-solid fa-pencil'></i> 
                         </a>
-                        <a class='text-dark text-decoration-none' href='/crud/delete.php?id=$row[id]' type='submit' name='delete' role='button'>
+                         <a class='text-dark text-decoration-none' onClick='return confirm(\"Are you sure ???\")' href='/crud/delete.php?id=$row[id]' type='submit' name='delete' role='button'>
                             <i class='fa-solid fa-trash'></i>
                         </a>
                     </td>
