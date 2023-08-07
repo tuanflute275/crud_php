@@ -1,3 +1,5 @@
+CREATE DATABASE crud_php;
+
 CREATE TABLE account 
 (
 	id int PRIMARY KEY AUTO_INCREMENT, 
